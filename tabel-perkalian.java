@@ -13,28 +13,31 @@ public class tabelPerkalian {
         System.out.print("Nilai B : ");
         int kolom = input.nextInt();        
         
-	int[][] angka = new int[baris][kolom];
+				int[][] angka = new int[baris][kolom];
         
         System.out.println("Tabel Perkalian "+ baris + " x " + kolom);
         System.out.println("");
 
         for(int a = 0; a <=((kolom*5)+10);a++)
         System.out.print("=");
-        System.out.println("");
+        
+
+				System.out.println("");
         System.out.print("|");
-        System.out.printf("%4s",'x');
+        
+		 		System.out.printf("%4s",'x');
         System.out.printf("%4s",'|');
         
-	for(int a = 1; a <= kolom; a++){
+				for(int a = 1; a <= kolom; a++){
             System.out.printf("%5d",a);
         }
         
-	System.out.printf("%2s",'|');
+				System.out.printf("%2s",'|');
         System.out.println("");
        
        for(int a = 0; a <=((kolom*5)+10);a++)
-        System.out.print("=");
-        System.out.println("");
+        	System.out.print("=");
+        	System.out.println("");
         
        
         perkalian(angka);
