@@ -1,4 +1,10 @@
-public static void main(String[] args) {
+package tabelperkalian;
+
+import java.util.Scanner;
+
+public class tabelPerkalian {
+
+   public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
         System.out.println("Masukkan nilai yang akan dikalikan");
@@ -6,7 +12,8 @@ public static void main(String[] args) {
         int baris = input.nextInt();
         System.out.print("Nilai B : ");
         int kolom = input.nextInt();        
-        int[][] angka = new int[baris][kolom];
+        
+	int[][] angka = new int[baris][kolom];
         
         System.out.println("Tabel Perkalian "+ baris + " x " + kolom);
         System.out.println("");
@@ -15,8 +22,7 @@ public static void main(String[] args) {
         System.out.print("=");
         System.out.println("");
         System.out.print("|");
-        
-	System.out.printf("%4s",'x');
+        System.out.printf("%4s",'x');
         System.out.printf("%4s",'|');
         
 	for(int a = 1; a <= kolom; a++){
@@ -26,9 +32,9 @@ public static void main(String[] args) {
 	System.out.printf("%2s",'|');
         System.out.println("");
        
-      	for(int a = 0; a <=((kolom*5)+10);a++)
-        	System.out.print("=");
-        	System.out.println("");
+       for(int a = 0; a <=((kolom*5)+10);a++)
+        System.out.print("=");
+        System.out.println("");
         
        
         perkalian(angka);
@@ -45,8 +51,8 @@ public static void main(String[] args) {
         }
         
         for(int a = 0; a <=((kolom*5)+10);a++)
-        System.out.print("=");
-        System.out.println("");
+        	System.out.print("=");
+        	System.out.println("");
 
     }
    
@@ -61,3 +67,5 @@ public static void main(String[] args) {
         }
             return hasil; 
         }
+
+}
