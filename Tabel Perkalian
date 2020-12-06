@@ -16,17 +16,19 @@ public static void main(String[] args) {
         System.out.println("");
         System.out.print("|");
         
-				System.out.printf("%4s",'x');
+	System.out.printf("%4s",'x');
         System.out.printf("%4s",'|');
         
-				for(int a = 1; a <= kolom; a++){
+	for(int a = 1; a <= kolom; a++){
             System.out.printf("%5d",a);
         }
-        System.out.printf("%2s",'|');
+        
+	System.out.printf("%2s",'|');
         System.out.println("");
-       for(int a = 0; a <=((kolom*5)+10);a++)
-        System.out.print("=");
-        System.out.println("");
+       
+      	for(int a = 0; a <=((kolom*5)+10);a++)
+        	System.out.print("=");
+        	System.out.println("");
         
        
         perkalian(angka);
