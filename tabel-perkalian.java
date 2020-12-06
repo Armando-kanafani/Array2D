@@ -46,7 +46,8 @@ public class tabelPerkalian {
             System.out.print("|");
             System.out.printf("%4d",(a +1));
             System.out.printf("%4s",'|');
-            for(int b = 0; b < angka[a].length; b++){
+            
+					for(int b = 0; b < angka[a].length; b++){
                 System.out.printf("%5d",angka[a][b]);
             }  
             
